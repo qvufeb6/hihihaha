@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190d24">
+  <meta name="description" content="Một món quà nhỏ gửi đến mẹ nhân ngày Phụ nữ Việt Nam 20/10.">
+  <title>Gửi Mẹ — Ngàn Yêu Thương | 20.10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="backgroundMusic" src="assets/nhac-nen.mp3" loop preload="none"></audio>
+  <div class="cinema-grain" aria-hidden="true"></div>
+  <div class="aurora aurora-a" aria-hidden="true"></div>
+  <div class="aurora aurora-b" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Về đầu trang"><span class="brand-mark">M</span><span>GỬI MẸ <i>♡</i></span></a>
+    <div class="top-actions">
+      <span class="date-chip">20 · 10 · 2026</span>
+      <button id="musicToggle" class="music-btn" aria-label="Bật hoặc tắt nhạc"><span class="music-icon">♫</span><span id="musicText">Bật nhạc</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="opening" id="opening">
+      <div class="opening-orbit orbit-one"></div><div class="opening-orbit orbit-two"></div>
+      <div class="intro-label"><span></span> MỘT MÓN QUÀ NHỎ DÀNH CHO MẸ <span></span></div>
+      <h1 class="opening-title">Có một điều<br><em>con muốn nói...</em></h1>
+      <p class="opening-subtitle">Đôi khi những lời yêu thương khó nói thành lời,<br>nên con gửi vào đây một chút dịu dàng.</p>
+
+      <div class="envelope-scene" id="envelopeScene">
+        <div class="envelope-aura"></div>
+        <button class="envelope-3d" id="envelope" aria-label="Mở lá thư gửi mẹ">
+          <div class="letter">
+            <span class="letter-flower">✿</span>
+            <span class="letter-to">Gửi mẹ yêu,</span>
+            <span class="letter-line">con có món quà này...</span>
+            <span class="letter-heart">♡</span>
+          </div>
+          <div class="env-back"></div>
+          <div class="env-pocket"></div>
+          <div class="env-flap"></div>
+          <div class="env-seal">♡</div>
+        </button>
+        <div class="orbit-spark spark-a">✧</div><div class="orbit-spark spark-b">✦</div><div class="orbit-spark spark-c">·</div>
+      </div>
+
+      <button class="btn btn-gold" id="openGiftExperience">Mở món quà của con <span>↗</span></button>
+      <div class="opening-footnote"><span class="tiny-pulse"></span> Hãy chạm vào phong thư để bắt đầu</div>
+    </section>
+
+    <section class="experience hidden" id="experience">
+      <section class="hero" id="home">
+        <div class="hero-light"></div>
+        <div class="hero-copy">
+          <div class="eyebrow"><span>20.10</span> · NGÀY PHỤ NỮ VIỆT NAM</div>
+          <h2>Dành tặng mẹ<br><em>một ngày thật vui</em></h2>
+          <p class="hero-lead">Cảm ơn mẹ vì những điều giản dị mỗi ngày.<br>Chúc mẹ luôn mạnh khỏe, vui vẻ và có nhiều thời gian cho bản thân.</p>
+          <div class="hero-actions">
+            <button class="btn btn-gold" id="readLetter">Đọc lời nhắn <span>↘</span></button>
+            <button class="btn btn-quiet" id="jumpFlowers">Khám phá vườn hoa <span>↓</span></button>
+          </div>
+          <div class="hero-signature">Gửi mẹ nhân ngày 20/10</div>
+        </div>
+        <div class="rose-stage" aria-label="Bông hồng 3D trang trí">
+          <div class="rose-halo halo-one"></div><div class="rose-halo halo-two"></div>
+          <div class="rose-pedestal"><div class="pedestal-top"></div><div class="pedestal-side"></div></div>
+          <div class="rose3d">
+            <div class="rose-stem"></div><div class="rose-leaf leaf-a"></div><div class="rose-leaf leaf-b"></div>
+            <div class="rose-bloom">
+              <i class="petal3 p1"></i><i class="petal3 p2"></i><i class="petal3 p3"></i><i class="petal3 p4"></i><i class="petal3 p5"></i><i class="petal3 p6"></i><i class="petal3 p7"></i><i class="petal3 p8"></i><i class="petal3 p9"></i><i class="petal3 p10"></i><i class="petal3 p11"></i><i class="petal3 p12"></i><i class="petal3 p13"></i><i class="petal3 p14"></i><i class="petal3 p15"></i><i class="petal3 p16"></i>
+              <span class="rose-core"></span>
+            </div>
+            <div class="rose-sparkle">✦</div>
+          </div>
+          <div class="floating-bloom bloom-left">✿</div><div class="floating-bloom bloom-right">✧</div>
+      
+        </div>
+        <div class="hero-bottom"><span>CUỘN XUỐNG ĐỂ KHÁM PHÁ</span><span class="scroll-line"></span></div>
+      </section>
+
+      <section class="letter-section section-wrap" id="letter">
+        <div class="section-heading">
+          <span class="section-kicker">LỜI CON MUỐN NÓI</span>
+          <h3>Một lá thư nhỏ<br><em>gửi người tuyệt vời nhất</em></h3>
+          <p>Có những điều giản dị nhưng con muốn mẹ biết mỗi ngày.</p>
+        </div>
+        <article class="letter-card">
+          <div class="letter-card-flower">✿</div>
+          <div class="letter-card-top">20 . 10 <span>♡</span></div>
+          <h4>Gửi Mẹ</h4>
+          <p>Nhân ngày 20/10, con chúc mẹ thật nhiều sức khỏe, luôn vui vẻ và gặp nhiều điều thuận lợi trong cuộc sống.</p>
+          <p>Cảm ơn mẹ vì đã chăm lo cho gia đình và luôn quan tâm đến con. Có những điều thường ngày con ít khi nói ra, nhưng con luôn ghi nhận và trân trọng.</p>
+          <p>Mong mẹ có thêm thời gian nghỉ ngơi, gặp gỡ bạn bè, làm những việc mình thích và tận hưởng những ngày thật thoải mái. Chúc mẹ lúc nào cũng giữ được sự lạc quan và nụ cười của mình.</p>
+          <p class="letter-last">Chúc mẹ một ngày 20/10 thật vui!</p>
+      
+        </article>
+      </section>
+
+      <section class="garden-section section-wrap" id="garden">
+        <div class="section-heading">
+          <span class="section-kicker">VƯỜN HOA THÁNG MƯỜI</span>
+          <h3>Mỗi loài hoa<br><em>một lời chúc riêng</em></h3>
+          <p>Chọn một bông hoa để đọc lời chúc dành cho mẹ.</p>
+        </div>
+        <div class="garden-intro">
+          <div class="garden-intro-mark"></div>
+          <p>Một khu vườn nhỏ được tạo nên từ những lời chúc giản dị: sức khỏe, niềm vui, bình an và những điều mẹ yêu thích.</p>
+        </div>
+        <div class="botanical-garden">
+          <div class="garden-backdrop"></div>
+          <div class="garden-moon"></div>
+          <div class="garden-firefly firefly-a"></div><div class="garden-firefly firefly-b"></div><div class="garden-firefly firefly-c"></div>
+          <button class="botanical-card card-rose" data-title="Hoa hồng · Sức khỏe" data-message="Chúc mẹ luôn mạnh khỏe, ăn ngon, ngủ ngon và có thật nhiều năng lượng cho những dự định của mình. Mong mẹ luôn nhớ chăm sóc bản thân, không chỉ lo cho mọi người.">
+            <span class="botanical-illustration rose-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"><b></b><b></b><b></b><b></b><b></b></i></span>
+            <span class="botanical-name">Hoa hồng</span><span class="botanical-subtitle">Sức khỏe & năng lượng</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+          <button class="botanical-card card-tulip" data-title="Tulip · Bình an" data-message="Chúc mẹ có những ngày nhẹ nhàng, ít phải lo nghĩ và luôn gặp được những người chân thành. Mong mọi việc trong nhà và ngoài cuộc sống đều thuận lợi với mẹ.">
+            <span class="botanical-illustration tulip-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"></i></span>
+            <span class="botanical-name">Tulip</span><span class="botanical-subtitle">Bình an & thuận lợi</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+          <button class="botanical-card card-sunflower" data-title="Hướng dương · Niềm vui" data-message="Chúc mẹ mỗi ngày đều có chuyện vui để kể, có thời gian gặp gỡ bạn bè và làm những điều mình thích. Mong mẹ luôn giữ được tinh thần tích cực và nụ cười rạng rỡ.">
+            <span class="botanical-illustration sunflower-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"><b></b></i></span>
+            <span class="botanical-name">Hướng dương</span><span class="botanical-subtitle">Niềm vui & lạc quan</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+          <button class="botanical-card card-daisy" data-title="Cúc họa mi · Dịu dàng" data-message="Chúc mẹ luôn có những khoảnh khắc bình dị mà vui vẻ: một tách trà ngon, một buổi chiều thong thả, một cuộc trò chuyện thú vị hay một chuyến đi ngắn ngày.">
+            <span class="botanical-illustration daisy-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"><b></b></i></span>
+            <span class="botanical-name">Cúc họa mi</span><span class="botanical-subtitle">Niềm vui giản dị</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+          <button class="botanical-card card-lotus" data-title="Hoa sen · Tự tại" data-message="Mong mẹ luôn có thời gian cho chính mình, được nghỉ ngơi khi mệt, đi nơi mình muốn và theo đuổi những sở thích riêng. Chúc mẹ luôn vững vàng và an nhiên.">
+            <span class="botanical-illustration lotus-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"><b></b><b></b><b></b><b></b><b></b></i></span>
+            <span class="botanical-name">Hoa sen</span><span class="botanical-subtitle">Tự tại & cân bằng</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+          <button class="botanical-card card-orchid" data-title="Lan hồ điệp · May mắn" data-message="Chúc mẹ gặp nhiều may mắn, công việc thuận lợi, những dự định sớm thành hiện thực và luôn có người sẵn lòng đồng hành khi cần.">
+            <span class="botanical-illustration orchid-illustration" aria-hidden="true"><i class="stem"></i><i class="leaf l1"></i><i class="leaf l2"></i><i class="bloom"><b></b><b></b><b></b><b></b></i></span>
+            <span class="botanical-name">Lan hồ điệp</span><span class="botanical-subtitle">May mắn & thành công</span><span class="botanical-action">Đọc lời chúc ↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="finale">
+        <div class="finale-orbit"></div><div class="finale-content">
+          <div class="finale-heart">♡</div>
+          <p class="finale-overline">LỜI CHÚC NGÀY 20/10</p>
+          <h3>Chúc mẹ luôn<br><em>vui khỏe và an nhiên.</em></h3>
+          <p class="finale-message">Chúc mẹ có một ngày 20/10 vui vẻ, nhiều sức khỏe<br>và luôn có thời gian cho những điều mình yêu thích.</p>
+          <button class="btn btn-gold" id="finaleButton">Gửi lời chúc đến mẹ <span>↗</span></button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-flower">✿</div>
+        <p>Một lời chúc nhỏ dành cho mẹ nhân ngày 20/10.</p>
+        <span>20 · 10 · 2026</span>
+        <button id="replay" class="replay-btn">↻ Xem lại từ đầu</button>
+      </footer>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card"><button class="modal-x" id="closeModal" aria-label="Đóng cửa sổ">×</button><div class="modal-flower" id="modalIcon">♡</div><span class="section-kicker" id="modalKicker">GỬI MẸ</span><h3 id="modalTitle">Một lời chúc dịu dàng</h3><p id="modalMessage"></p><button class="heart-close-btn" id="modalOkay" aria-label="Đóng lời chúc" title="Đóng lời chúc">♥</button></div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
